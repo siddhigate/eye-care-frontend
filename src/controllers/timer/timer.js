@@ -17,7 +17,7 @@ let initial, totalsecs, perc, paused, mins, seconds;
 let isbreak;
 
 startBtn.addEventListener("click", () => {
-  mins = 1;
+  mins = 20;
   isbreak=false;
 
   pause_Btn.style.display = "initial";
