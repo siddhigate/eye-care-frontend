@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: auto;
+  margin: auto;
+
+  box-sizing: border-box;
+}
+/* 
+.border{
+    border:rgba(0, 0, 0, 0.11);
+}
+
+body {
+  height: 100vh;
+  padding: 35px;
+
+  background: rgb(243, 243, 243);
+  color: #131313;
+  font-family: "Montserrat", sans-serif;
+} */
+
+.container-center{
+    /* margin:auto;
+    width:50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: auto; */
+    margin-left: auto;
+    text-align: center;
+    /* margin-top: rem; */
+}
+
+.container-center{
+    margin-top: 2rem;
+    }
+
+    p{
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+      font-size: 1.5rem;
+    }
+h1 {
+  margin: 15px 0;
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+}
+input {
+  transition: 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin: 35px 0;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  transition: 0.5s ease-in-out;
+}
+label {
+  font-size: 12px;
+}
+
+.start {
+  background: #3B82F6;
+  color: white;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.break {
+  background: rgb(0, 199, 116);
+  color: #000000;
+}
+.reset {
+  background: #DBEAFE;
+  color: #000000;
+  width: 7rem;
+  /* display:none;   */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+}
+.pause {
+  background: #DBEAFE;
+  width: 7rem;
+  /* display:none; */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+}
+.resume {
+  background: #8B5CF6;
+  color: white;
+  width: 7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+}
+
+.clock {
+  padding: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  height: 30%;
+  font-size: 24px;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-ring__circle {
+  transition: 0.5s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke: rgb(51, 65, 255);
+}
+
+.danger {
+  stroke: rgb(243, 17, 28);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+
+
+.btn-group{
+    margin-top: 9rem;
+}
+
+
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(-90deg) scale(1);
+  }
+  50% {
+    transform: rotate(-90deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-90deg) scale(0.8);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* body {
+    display: grid;
+    grid-template-areas:
+      "head head head"
+      "form clock form"
+      "btns ji";
+  } */
+  
+  p{
+    margin-top:0;
+  }
+  .container-center{
+      margin-top: 10rem;
+  }
+  .btn-group {
+    grid-area: btns;
+    justify-content: center;
+  }
+  .clock {
+    grid-area: clock;
+    height: 100%;
+  }
+  h1 {
+    grid-area: head;
+
+    align-self: center;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  
+  .container-center{
+    margin-top: 0rem;
+    }
+}

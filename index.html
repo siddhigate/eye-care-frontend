@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./src/css/timer.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./src/css/modal.css">
+
+        <title>Eye care</title>
+    </head>
+    <body onload="index_onload()">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Eye care</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="./src/pages/dashboard.html" class="nav__link">Dashboard</a></li>
+                        <li class="nav__item signin"><a href="./src/pages/signin.html" class="nav__link">Signin</a></li>
+                        <li class="nav__item signout" ><a href="#" class="nav__link">Signout</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- =======TIMER============== -->
+        <div class="container-center">
+            <p>Take care of your eyes</p>
+            <figure class="clock">
+                <div class="mins">00</div>
+                <div>:</div>
+                <div class="secs">00</div>
+                <audio
+                  src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+                ></audio>
+                <svg class="progress-ring" height="180" width="180">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke-width="8"
+                    fill="transparent"
+                    r="80"
+                    cx="90"
+                    cy="90"
+                  />
+                </svg>
+              </figure>
+          
+              <div class="btn-group">
+                <button class="start">start timer</button>
+                
+            </div>
+              <div class="btn-group2">
+                <button class="reset">reset</button>
+                <button class="pause">pause</button>
+              </div>
+        </div>
+        
+        <!--===== MODAL =====-->
+        <div id="open-modal" class="modal-window">
+          <div class="modal-content">
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <h1>Take care👋</h1>
+            <div class="img-modal">
+              <img src="./src/images/exercise.png" width="350" height="150" class="img-modal"> 
+            </div>   
+            <div class="text-center">Look 20 feet away for 20 seconds.</div>
+            <div class="btn-center">
+              <button class="done-btn">Done</button>
+            </div>
+            
+            </div>
+            
+            </div>
+  
+        </div>
+  
+
+        <!--===== MAIN JS =====-->
+        <script src="./app.js"></script>
+        <script src="./src/controllers/timer/controls.js"></script>
+        <script src="./src/controllers/timer/progress.js"></script>
+        <script src="./src/controllers/timer/timer.js"></script>
+        <script src="./src/controllers/modal/modal.js"></script>
+        <script src="./src/controllers/config.js"></script>
+        <script src="./src/controllers/auth/signoutcontroller.js"></script>
+    </body>
+</html>

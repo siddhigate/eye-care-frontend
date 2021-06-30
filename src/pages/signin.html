@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        <link rel="stylesheet" href="../css/auth.css">
+        <link rel="stylesheet" href="../../style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- <link rel="stylesheet" href="./src/modal/modal.css"> -->
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+        <title>Nav</title>
+    </head>
+    <body onload="signinonload()">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav_div_1">
+                    <a href="#" class="nav__logo">Eye care</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../../index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="./dashboard.html" class="nav__link">Dashboard</a></li>
+                        <li class="nav__item signin"><a href="./signin.html" class="nav__link active">Signin</a></li>
+                        <li class="nav__item signout"><a href="../../index.html" class="nav__link">Signout</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+
+        <!--===== SIGN IN FORM =====-->
+        <div class="container">
+		
+            <div class="login-content">	
+                <form id="signinform">
+                    
+                    <h2 class="title">Sign in</h2>
+                       <div class="input-div one">
+                          <div class="i">
+                                  <i class="fas fa-user"></i>
+                          </div>
+                          <div class="div">
+                                  <h5>Email</h5>
+                                  <input type="text" class="input" id="email-signin">
+                          </div>
+                       </div>
+                       <div class="input-div pass">
+                          <div class="i"> 
+                               <i class="fas fa-lock"></i>
+                          </div>
+                          <div class="div">
+                               <h5>Password</h5>
+                               <input type="password" class="input" id="password-signin">
+                       </div>
+                    </div>
+                    <p class="error-msg"></p>
+                    <input class="btn" value="Sign in" id="btn-signin">
+                    <a href="./signup.html" class="signin-link">Don't have an account sign up?</a>
+                </form>
+            </div>
+        </div>
+
+
+        <!--===== MAIN JS =====-->
+        <script src="../../app.js"></script>
+        <script src="../controllers/config.js"></script>
+        <script src="../controllers/auth/authuicontroller.js"></script>
+        <script src="../controllers/auth/signincontroller.js"></script>
+        <script src="../controllers/auth/apicalls.js"></script>
+    </body>
+</html>

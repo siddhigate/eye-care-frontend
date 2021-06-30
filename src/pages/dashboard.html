@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+        
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
+
+        <title>Nav</title>
+    </head>
+    <body onload="onloaddash()">
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav_div_1">
+                    <a href="#" class="nav__logo">Eye care</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../../index.html" class="nav__link ">Home</a></li>
+                        <li class="nav__item"><a href="./dashboard.html" class="nav__link active">Dashboard</a></li>
+                        <li class="nav__item signin"><a href="./signin.html" class="nav__link">Signin</a></li>
+                        <li class="nav__item signout" ><a href="../../index.html" class="nav__link">Signout</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <!-- =======TIMER============== -->
+        <div class="container-center">
+            <p class="score">Score : 0</p>
+            
+            <img src="../images/plant9.png" height="350" id="flower">
+
+            <a class="continue-btn" href="../../index.html">Continue taking care of your eyes</a>
+            <a class="login-btn continue-btn" href="./signin.html">Login </a>
+        </div>
+
+        <!--===== MAIN JS =====-->
+        <script src="../controllers/config.js"></script>
+        <script src="../controllers/dashboard/onloaddashboard.js"></script>
+        <script src="../controllers/auth/signoutcontroller.js"></script>
+    </body>
+</html>
