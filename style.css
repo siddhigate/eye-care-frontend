@@ -210,3 +210,15 @@ a{
   }
   
 }
+
+
+@media screen and (max-width: 1000px){
+ 
+  .nav_div_1{
+    margin-left: 2rem;
+  }
+
+  .nav__toggle{
+    margin-right: 2rem;
+  }
+}

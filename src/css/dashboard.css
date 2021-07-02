@@ -31,7 +31,7 @@ h1 {
 
 .nav_div_1{
 	padding: auto;
-margin: auto;
+  margin: auto;
 }
 
 .nav__menu{
@@ -58,4 +58,16 @@ margin: auto;
   display: none;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+
+@media screen and (max-width: 1000px){
+ 
+  .nav_div_1{
+    margin-left: 2rem;
+  }
+
+  .nav__toggle{
+    margin-right: 2rem;
+  }
 }

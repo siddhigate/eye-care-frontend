@@ -70,4 +70,7 @@ signinbtn.addEventListener("click", () => {
 const signinonload = () => {
     signoutlink.style.display = "none";
 
+	
+	email.value = "";
+	password.value = "";
 }

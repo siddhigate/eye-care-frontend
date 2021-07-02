@@ -59,4 +59,7 @@ signupbtn.addEventListener("click", () => {
 const signuponload = () => {
     signoutlink.style.display = "none";
 
+	email_signup.value = "";
+	username_signup.value = "";
+	password_signup = "";
 }
